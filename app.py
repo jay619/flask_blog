@@ -69,5 +69,5 @@ def edit(id):
             conn.commit()
             conn.close()
             return redirect(url_for('index'))
-
+            
     return render_template('edit.html', post=post)
